@@ -2,14 +2,11 @@
 
 var express = require('express');
 var app = express();
-var routes = require('./index.js')
 
 module.exports = app; // esto es solo para testear mas facil
 
-
-
-app.use('/', routes.router);
-
+const { router } = require('./routes/index.js');
+app.use(router);
 
 
 

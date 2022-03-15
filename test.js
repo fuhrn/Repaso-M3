@@ -3,7 +3,7 @@
 
 var supertest = require('supertest-as-promised')(require('./app'));
 var expect = require('chai').expect; //assertion library
-var { tareas } = require('./index.js')
+var { tareas } = require('./routes/index.js')
 
 describe('Testing Repaso M3', function() {
 
